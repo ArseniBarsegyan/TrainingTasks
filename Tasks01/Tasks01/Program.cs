@@ -1,4 +1,8 @@
-﻿namespace Tasks01
+﻿using Task1._2Library;
+using Task1._3Library;
+using Task1._4Library;
+using System;
+namespace Task01
 {
     public class Program
     {
@@ -21,6 +25,16 @@
 
             // Task 4 - В методе Main создай List<IAnimal>, создай несколько панд и енотов
             // и кинь их в эту коллекцию. Подсказка (Liskov Substitution Principle).
+
+            // for Task 1.4: 
+            List <IAnimal> zooPark = new List<IAnimal>();
+            IAnimal bamboo = new Panda();
+            bamboo.GetInfo();
+            Ianimal rocket = new Racoon();
+            zooPark.Add(bamboo);
+            zooPark.Add(Rocket);
+
+            Console.Readkey();
         }
     }
 }
