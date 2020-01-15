@@ -2,9 +2,16 @@
 {
     public class Warrior
     {
-        public void Attack(IWeapons weapon)
+        private IWeapon _weapon;
+
+        public Warrior(IWeapon weapon)
         {
-            weapon.DoDamage();
+            _weapon = weapon;
+        }
+
+        public void Attack()
+        {
+            _weapon.DoDamage();
         }
     }
 }

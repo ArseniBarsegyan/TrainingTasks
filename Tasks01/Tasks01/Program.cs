@@ -1,7 +1,7 @@
-﻿using Task1._2Library;
-using Task1._3Library;
+﻿using System;
+using System.Collections.Generic;
 using Task1._4Library;
-using System;
+
 namespace Task01
 {
     public class Program
@@ -30,11 +30,11 @@ namespace Task01
             List <IAnimal> zooPark = new List<IAnimal>();
             IAnimal bamboo = new Panda();
             bamboo.GetInfo();
-            Ianimal rocket = new Racoon();
+            IAnimal rocket = new Racoon();
             zooPark.Add(bamboo);
-            zooPark.Add(Rocket);
+            zooPark.Add(rocket);
 
-            Console.Readkey();
+            Console.ReadKey();
         }
     }
 }

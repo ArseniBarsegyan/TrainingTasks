@@ -5,11 +5,15 @@ VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks01", "Tasks01\Tasks01.csproj", "{33257BC9-00FF-46CE-B531-74CCAF27EF8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.2Library", "Task1.2Library\Task1.2Library.csproj", "{47A18D3A-853D-4FA9-9B52-A678BF1E7770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1.2Library", "Task1.2Library\Task1.2Library.csproj", "{47A18D3A-853D-4FA9-9B52-A678BF1E7770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.3Library", "Task1.3Library\Task1.3Library.csproj", "{EB20826D-3BCB-4821-9C7C-994FE8757F07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1.3Library", "Task1.3Library\Task1.3Library.csproj", "{EB20826D-3BCB-4821-9C7C-994FE8757F07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.4Library", "Task1.4Library\Task1.4Library.csproj", "{A5422C2C-72C5-401E-8F2F-53FAD0417A16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1.4Library", "Task1.4Library\Task1.4Library.csproj", "{A5422C2C-72C5-401E-8F2F-53FAD0417A16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5075F8B8-2D6F-4C23-B4CD-2646FE72CC29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{9395F96D-7834-44D6-B9D3-A4BA17A3D4A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +40,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33257BC9-00FF-46CE-B531-74CCAF27EF8F} = {9395F96D-7834-44D6-B9D3-A4BA17A3D4A7}
+		{47A18D3A-853D-4FA9-9B52-A678BF1E7770} = {5075F8B8-2D6F-4C23-B4CD-2646FE72CC29}
+		{EB20826D-3BCB-4821-9C7C-994FE8757F07} = {5075F8B8-2D6F-4C23-B4CD-2646FE72CC29}
+		{A5422C2C-72C5-401E-8F2F-53FAD0417A16} = {5075F8B8-2D6F-4C23-B4CD-2646FE72CC29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {625A39C5-7AA5-4AD6-980C-9D82860F52AD}

@@ -2,12 +2,13 @@
 
 namespace Task1._3Library
 {
-    public class Sword: IWeapons
+    public class Sword: IWeapon
     {
-        private int _Damage;
+        private int _damage;
+
         public void DoDamage()
         {
-            Console.WriteLine($"Sword does {_Damage} in melee combat");
+            Console.WriteLine($"Sword does {_damage} in melee combat");
         }
     }
 }

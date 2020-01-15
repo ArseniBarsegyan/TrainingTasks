@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Task1._3Library
 {
-    class Bow: IWeapons
+    public class Bow: IWeapon
     {
-        private int _Damage;
+        private int _damage;
+
         public void DoDamage()
         {
-            Console.WriteLine($" Bow does {_Damage} in range combat");
+            Console.WriteLine($" Bow does {_damage} in range combat");
         }
     }
 }
