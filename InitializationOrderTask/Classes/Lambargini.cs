@@ -11,6 +11,5 @@ namespace InitializationOrderTask.Classes
         {
             MaxSpeed = 300;
         }
-
     }
 }

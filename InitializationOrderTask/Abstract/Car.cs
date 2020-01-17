@@ -5,7 +5,6 @@ namespace InitializationOrderTask.Abstract
     public abstract class Car
     {
         private int _speed;
-
         public Car(int speed)
         {
             _speed = speed;
