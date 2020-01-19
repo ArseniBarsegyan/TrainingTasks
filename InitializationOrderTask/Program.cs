@@ -16,7 +16,7 @@ namespace InitializationOrderTask
         public static void Main(string[] args)
         {
             //  Task1 testing                        
-            Car someLambargini = new Lambargini(299);
+            Car someLambargini = new Lamborghini();
             someLambargini.Drive();
             someLambargini.Accelerate();
             someLambargini.Accelerate();
@@ -24,9 +24,9 @@ namespace InitializationOrderTask
             //Task 2 testing
             Task2 t1 = new Task2();
             Task2 t2 = new Task2();
-            Task2.CounterOfObjectsView();
+            Console.WriteLine(t1.CounterOfObjectsView());
             Task2 t3 = new Task2();
-            Task2.CounterOfObjectsView();
+            Console.WriteLine(t1.CounterOfObjectsView());
 
             Console.ReadKey();
         }

@@ -5,12 +5,13 @@ namespace InitializationOrderTask.Abstract
     public abstract class Car
     {
         private int _speed;
-        public Car(int speed)
+
+        public Car(int maxSpeed)
         {
-            _speed = speed;
-            MaxSpeed = 10;
+            MaxSpeed = maxSpeed;
         }
-        public int MaxSpeed { get; set; }
+
+        public int MaxSpeed { get; }
 
         public void Drive()
         {
