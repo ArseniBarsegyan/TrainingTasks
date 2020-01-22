@@ -8,7 +8,7 @@ namespace MediaPlayer.Collections
 {
     public class MediaSet : IMediaCollection
     {
-        private List<IMediaItem> _mediaItems;
+        private List<IMediaItem> _mediaItems = new List<IMediaItem>();
 
         public MediaSet(IEnumerable<IMediaItem> mediaItems)
         {

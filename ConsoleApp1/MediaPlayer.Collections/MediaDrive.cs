@@ -7,9 +7,8 @@ namespace MediaPlayer.Collections
 {
     public class MediaDrive : IMediaCollection
     {
-        private readonly List<IMediaItem> _mediaItems;
-
-        public MediaDrive(IEnumerable<IMediaItem> mediaItems)
+        private readonly List<IMediaItem> _mediaItems = new List<IMediaItem>();
+        public MediaDrive(List<IMediaItem> mediaItems)
         {
             AddAudioAndImagesOnly(mediaItems);
         }
@@ -22,7 +21,7 @@ namespace MediaPlayer.Collections
             }
         }
 
-        private void AddAudioAndImagesOnly(IEnumerable<IMediaItem> mediaItems)
+        private void AddAudioAndImagesOnly(List<IMediaItem> mediaItems)
         {
             foreach (var item in mediaItems)
             {

@@ -1,4 +1,10 @@
-﻿using System.Text;
+﻿using MediaPlayer.Collections;
+using MediaPlayer.Collections.Interfaces;
+using MediaPlayer.Data.Classes;
+using MediaPlayer.Data.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace ConsoleApp1
 {
@@ -13,6 +19,16 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
+            List<IMediaItem> mediaList = new List<IMediaItem>();
+            IMediaItem audio1 = new Audio();                     
+            IMediaItem image1 = new Image(); 
+            IMediaItem audio2 = new Audio();
+            mediaList.Add(audio1); mediaList.Add(image1); mediaList.Add(audio1);
+            IMediaCollection mediaDrive = new MediaDrive(mediaList);
+            MediaPlayer mediaPlayer = new MediaPlayer();
+            mediaPlayer.PlayMedia(mediaDrive);
+
+            Console.ReadKey();
         }
     }
 }
