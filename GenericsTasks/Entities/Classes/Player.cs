@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Entities.Classes
 {
     public class Player : Entity
     {
         public string Name { get; set; }
-        public Team team = new Team();
-        List<Match> matches = new List<Match>();
+        public Team Team { get; set; }
+        public List<Match> Matches { get; set; }
     }
 }

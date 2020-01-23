@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Entities.Classes
+﻿namespace Entities.Classes
 {
     public class Entity
     {
