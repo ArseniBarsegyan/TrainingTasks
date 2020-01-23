@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace MediaPlayer.Collections
 {
-    public class MediaSet : IMediaCollection
+    public class MediaSet : PlaingEntity
     {
         private List<IMediaItem> _mediaItems = new List<IMediaItem>();
 
@@ -35,14 +35,6 @@ namespace MediaPlayer.Collections
             _mediaItems = new List<IMediaItem>();
             AddAudioAndImagesOnly(mediaItems);
             Console.WriteLine("MediaSet rewrited");
-        }
-
-        public void Play()
-        {
-            foreach (var item in _mediaItems)
-            {
-                item.Play();
-            }
         }
     }
 }

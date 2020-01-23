@@ -5,20 +5,12 @@ using System.Collections.Generic;
 
 namespace MediaPlayer.Collections
 {
-    public class MediaDrive : IMediaCollection
+    public class MediaDrive : PlaingEntity
     {
         private readonly List<IMediaItem> _mediaItems = new List<IMediaItem>();
         public MediaDrive(List<IMediaItem> mediaItems)
         {
             AddAudioAndImagesOnly(mediaItems);
-        }
-
-        public void Play()
-        {
-            foreach (var item in _mediaItems)
-            {
-                item.Play();
-            }
         }
 
         private void AddAudioAndImagesOnly(List<IMediaItem> mediaItems)

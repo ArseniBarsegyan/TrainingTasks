@@ -6,39 +6,31 @@ using System.Text;
 
 namespace MediaPlayer.Collections
 {
-    public class MediaEvent
+    public class MediaEvent : PlaingEntity
     {
         private readonly List<IMediaItem> _mediaItems = new List<IMediaItem>();
         public MediaEvent(List<IMediaItem> mediaItems)
         {
             AddVideoAndAudioOnly(mediaItems);
         }
-        public void Play()
-        {
-            foreach (var item in _mediaItems)
-            {
-                item.Play();
-            }
-        }
         private void AddVideoAndAudioOnly(List<IMediaItem> mediaItems)
         {
             foreach (var item in mediaItems)
             {
-                if (item is Video video)
+                switch (item)
                 {
-                    _mediaItems.Add(video);
-                }
-                else if (item is Audio audio)
-                {
-                    _mediaItems.Add(audio);
-                }
-                else if (item is RemoteVideo rVideo)
-                {
-                    _mediaItems.Add(rVideo);
-                }
-                else if (item is RemoteAudio rAudio)
-                {
-                    _mediaItems.Add(rAudio);
+                    case Video video:
+                        _mediaItems.Add(video);
+                        break;
+                    case Audio audio:
+                        _mediaItems.Add(audio);
+                        break;
+                    case RemoteVideo rVideo:
+                        _mediaItems.Add(rVideo);
+                        break;
+                    case RemoteAudio rAudio:
+                        _mediaItems.Add(rAudio);
+                        break;
                 }
             }
         }

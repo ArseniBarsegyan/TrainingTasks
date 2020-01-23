@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace MediaPlayer.Collections
 {
-    public class MediaSeries
+    public class MediaSeries: PlaingEntity
     {
         private readonly List<IMediaItem> _mediaItems = new List<IMediaItem>();
         public MediaSeries (List<IMediaItem> mediaItems)

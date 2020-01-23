@@ -26,7 +26,7 @@ namespace ConsoleApp1
             mediaList.Add(audio1); mediaList.Add(image1); mediaList.Add(audio1);
             IMediaCollection mediaDrive = new MediaDrive(mediaList);
             MediaPlayer mediaPlayer = new MediaPlayer();
-            mediaPlayer.PlayMedia(mediaDrive);
+            mediaPlayer.PlayMedia(mediaDrive, mediaList);
 
             Console.ReadKey();
         }
