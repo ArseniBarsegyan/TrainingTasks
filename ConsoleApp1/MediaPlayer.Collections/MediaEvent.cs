@@ -1,12 +1,12 @@
-﻿using MediaPlayer.Data.Classes;
+﻿using MediaPlayer.Collections.Interfaces;
+using MediaPlayer.Data.Classes;
 using MediaPlayer.Data.Interfaces;
-using System;
+
 using System.Collections.Generic;
-using System.Text;
 
 namespace MediaPlayer.Collections
 {
-    public class MediaEvent : PlaingEntity
+    public class MediaEvent : MediaCollection
     {
         private readonly List<IMediaItem> _mediaItems = new List<IMediaItem>();
         public MediaEvent(List<IMediaItem> mediaItems)

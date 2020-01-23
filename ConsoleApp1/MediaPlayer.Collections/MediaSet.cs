@@ -1,12 +1,13 @@
 ﻿using MediaPlayer.Collections.Interfaces;
 using MediaPlayer.Data.Classes;
 using MediaPlayer.Data.Interfaces;
+
 using System;
 using System.Collections.Generic;
 
 namespace MediaPlayer.Collections
 {
-    public class MediaSet : PlaingEntity
+    public class MediaSet : MediaCollection
     {
         private List<IMediaItem> _mediaItems = new List<IMediaItem>();
 

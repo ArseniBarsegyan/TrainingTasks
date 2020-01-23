@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{13DE2F45-6E48-4062-AD06-9419D29B9741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPlayer.Data", "MediaPlayer.Data\MediaPlayer.Data.csproj", "{6FFE76F4-BC5C-418B-89E1-6BFB2194258F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaPlayer.Data", "MediaPlayer.Data\MediaPlayer.Data.csproj", "{6FFE76F4-BC5C-418B-89E1-6BFB2194258F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPlayer.Collections", "MediaPlayer.Collections\MediaPlayer.Collections.csproj", "{E1B83FCA-98C4-4B31-B2E1-91BF7CFA237B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaPlayer.Collections", "MediaPlayer.Collections\MediaPlayer.Collections.csproj", "{E1B83FCA-98C4-4B31-B2E1-91BF7CFA237B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,24 +1,17 @@
 ﻿using MediaPlayer.Collections.Interfaces;
 using MediaPlayer.Data.Classes;
 using MediaPlayer.Data.Interfaces;
-using System.Collections.Generic;
 
+using System.Collections.Generic;
 
 namespace MediaPlayer.Collections
 {
-    public class MediaSeries: PlaingEntity
+    public class MediaSeries: MediaCollection
     {
         private readonly List<IMediaItem> _mediaItems = new List<IMediaItem>();
         public MediaSeries (List<IMediaItem> mediaItems)
         {
             AddVideoAndImagesOnly(mediaItems);
-        }
-        public void Play()
-        {
-            foreach (var item in _mediaItems)
-            {
-                item.Play();
-            }
         }
         private void AddVideoAndImagesOnly(List<IMediaItem> mediaItems)
         {

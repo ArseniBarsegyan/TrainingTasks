@@ -23,8 +23,10 @@ namespace ConsoleApp1
             IMediaItem audio1 = new Audio();                     
             IMediaItem image1 = new Image(); 
             IMediaItem audio2 = new Audio();
-            mediaList.Add(audio1); mediaList.Add(image1); mediaList.Add(audio1);
-            IMediaCollection mediaDrive = new MediaDrive(mediaList);
+            mediaList.Add(audio1); 
+            mediaList.Add(image1);
+            mediaList.Add(audio2);
+            MediaCollection mediaDrive = new MediaDrive(mediaList);
             MediaPlayer mediaPlayer = new MediaPlayer();
             mediaPlayer.PlayMedia(mediaDrive, mediaList);
 

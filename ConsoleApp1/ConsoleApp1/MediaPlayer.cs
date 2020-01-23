@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     public class MediaPlayer
     {
-        public void PlayMedia (IMediaCollection mediaCollection, List <IMediaItem> list)
+        public void PlayMedia (MediaCollection mediaCollection, List <IMediaItem> list)
         {
             mediaCollection.Play(list);
         }
