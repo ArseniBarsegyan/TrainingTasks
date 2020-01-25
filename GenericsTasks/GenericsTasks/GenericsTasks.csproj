@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CRUD\CRUD.csproj" />
+    <ProjectReference Include="..\GenericsRepo\GenericsRepo.csproj" />
   </ItemGroup>
 
 </Project>
