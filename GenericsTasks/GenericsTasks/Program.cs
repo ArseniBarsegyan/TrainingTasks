@@ -55,7 +55,7 @@ namespace GenericsTasks
                 Console.WriteLine(t);
             }
 
-            //Viewing of repository updating (changing name from "Evdosii" to "Evlampii"
+            //Viewing of repository updating (changing name from "Evdosii" to "Evlampii")
             Console.WriteLine(gottenPlayer.Name);
 
             Console.ReadKey();
