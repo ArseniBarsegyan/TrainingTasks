@@ -10,10 +10,7 @@ namespace Entities.Classes
         // для того, чтобы не обязательно было вызывать конструктор.
         // Инициализацией этого поля будет заниматься либо код, выше репозитория
         // (обычно это сервисы), либо сам Entity framework
-        public Team(int id)
-        {
-            Id = id;
-        }
+       
         public string Name { get; set; }
         public List<Player> players = new List<Player>();
 

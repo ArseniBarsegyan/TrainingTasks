@@ -8,10 +8,7 @@ namespace Entities.Classes
         // для того, чтобы не обязательно было вызывать конструктор.
         // Инициализацией этого поля будет заниматься либо код, выше репозитория
         // (обычно это сервисы), либо сам Entity framework
-        public Match(int id)
-        {
-            Id = id;
-        }
+        
         public DateTime TimeOfStart { get; set; }
         public int Duration { get; set; }
         public string Result { get; set; }
