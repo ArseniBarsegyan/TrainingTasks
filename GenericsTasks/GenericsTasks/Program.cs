@@ -30,26 +30,24 @@ namespace GenericsTasks
     {
         public static void Main(string[] args)
         {
-            Match match = new Match(1);
-            Player player1 = new Player(2);
-            Team team = new Team(3);
-            Player player2 = new Player(4);
-            player1.Name = "Evdokim";
-
-            List<Entity> entities = new List<Entity>();
+            Match match = new Match { Id = 1 };
+            Player player1 = new Player { Id = 2 };
+            Team team = new Team { Id = 3 };
+            Player player2 = new Player { Id = 4, Name = "Evdokim" };
+            
+            var entities = new List<Entity>();
             Repository <Entity> repository = new Repository <Entity> (entities);
             repository.Create(player1);
             repository.Create(player2);
             repository.Create(team);
             repository.Create(match);
             repository.Delete(4);
-            Player player3 = new Player(2);
-            player3.Name = "Evlampii";
+            Player player3 = new Player { Id = 2, Name = "Evlampii" };
             repository.Update(player3);
             Player gottenPlayer  = (Player) repository.GetEntity(2);
-            
+
             //Viewing of repository content
-            List < Entity > repList= repository.GetAll();
+            var repList= repository.GetAll();
             foreach (var t in repList)
             {
                 Console.WriteLine(t);
