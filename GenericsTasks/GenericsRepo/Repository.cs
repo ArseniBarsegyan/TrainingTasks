@@ -19,6 +19,8 @@ namespace GenericsRepo
         }
         public T GetEntity(int id)
         {
+            // названия переменных. не преувеличивай, называй просто и ясно. 
+            // просто entity.
             var someEntityById = _entities.Find(item => item.Id == id);
             if (someEntityById == null) { Console.WriteLine("Entity with input id doesnt exist"); }
             return someEntityById;
@@ -30,13 +32,16 @@ namespace GenericsRepo
         public bool Delete(int id)
         {
             var someEntityById = _entities.Find(item => item.Id == id);
+            // А если у тебя тут будет Remove(null)? Не выкинет ли exception?
             _entities.Remove(someEntityById);
+            // Всегда переноси тело if-else с новых строчек, как ты сделал в методе Update()
             if (someEntityById == null) { return true; }
             else { return false; }     
         }
         public void Update(T entity)
         {
             int i = entity.Id;
+            // Всегда лучше используй FirstOrDefault()
             var someEntityById = _entities.Find(item => item.Id == i);
             if (someEntityById == null)
             {

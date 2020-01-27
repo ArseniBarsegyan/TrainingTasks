@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{0A12786F-236E-418F-AC20-53AAC34449D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{7C4507C3-487D-485D-8B6D-2371121725DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaStore.Data.Core", "PandaStore.Data.Core\PandaStore.Data.Core.csproj", "{EF42B282-3727-4416-A7B0-B74929D52100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaStore.Data", "PandaStore.Data\PandaStore.Data.csproj", "{71166D22-0140-4A36-A0EE-825D7F7B6A67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaStore.Web", "PandaStore.Web\PandaStore.Web.csproj", "{F8E737D7-DCDB-4CDC-B2D9-0A5AB4C8928B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF42B282-3727-4416-A7B0-B74929D52100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF42B282-3727-4416-A7B0-B74929D52100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF42B282-3727-4416-A7B0-B74929D52100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF42B282-3727-4416-A7B0-B74929D52100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71166D22-0140-4A36-A0EE-825D7F7B6A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71166D22-0140-4A36-A0EE-825D7F7B6A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71166D22-0140-4A36-A0EE-825D7F7B6A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71166D22-0140-4A36-A0EE-825D7F7B6A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E737D7-DCDB-4CDC-B2D9-0A5AB4C8928B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E737D7-DCDB-4CDC-B2D9-0A5AB4C8928B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E737D7-DCDB-4CDC-B2D9-0A5AB4C8928B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E737D7-DCDB-4CDC-B2D9-0A5AB4C8928B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF42B282-3727-4416-A7B0-B74929D52100} = {0A12786F-236E-418F-AC20-53AAC34449D7}
+		{71166D22-0140-4A36-A0EE-825D7F7B6A67} = {0A12786F-236E-418F-AC20-53AAC34449D7}
+		{F8E737D7-DCDB-4CDC-B2D9-0A5AB4C8928B} = {7C4507C3-487D-485D-8B6D-2371121725DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0C61D2F-1C7A-4700-821E-D1EBD8D60009}
+	EndGlobalSection
+EndGlobal
