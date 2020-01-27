@@ -30,12 +30,16 @@ namespace GenericsTasks
     {
         public static void Main(string[] args)
         {
+            // Всегда используй синтаксис инициализации объекта там, где можешь
+            // Для этого и придумали автосвойства, чтобы код был проще и читался лучше.
             Match match = new Match(1);
             Player player1 = new Player(2);
             Team team = new Team(3);
             Player player2 = new Player(4);
             player1.Name = "Evdokim";
 
+            // Всегда лучше использовать var. Он упрощает чтение кода
+            // в большинстве случаев.
             List<Entity> entities = new List<Entity>();
             Repository <Entity> repository = new Repository <Entity> (entities);
             repository.Create(player1);
